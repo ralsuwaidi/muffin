@@ -32,9 +32,9 @@ export default App;
 function SelectionCard(props){
   return (
     <div className="mx-2">
-        <a href="#" class="block text-center py-2 max-w-sm bg-transparent rounded-lg border border-gray-100 hover:bg-gray-100">
+        <a href="#" className="block text-center py-2 max-w-sm bg-transparent rounded-lg border border-gray-100 hover:bg-gray-100">
         <img src={props.image} className="w-12 mx-auto"></img>
-        <p class="mb-1 mt-2 text-xs font-bold tracking-tight dark:text-white">
+        <p className="mb-1 mt-2 text-xs font-bold tracking-tight dark:text-white">
           {props.text}
         </p>
       </a>
