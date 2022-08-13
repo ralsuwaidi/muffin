@@ -1,7 +1,6 @@
 import "./App.css";
 import React from 'react'
-import DetailModal from "./components/DetailModal";
-
+import DetailModal from "./detailModal/DetailModal";
 
 export default function App(){
 
