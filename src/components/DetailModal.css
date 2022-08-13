@@ -1,0 +1,9 @@
+.DetailModal-img{
+    height: 70vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.DetailModal-height{
+    height: -webkit-fill-available;
+}

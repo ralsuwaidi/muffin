@@ -2,7 +2,7 @@
     background-image: url(https://cdn.dribbble.com/users/143350/screenshots/14006097/media/6d7806731a1d2cfff7b37598338f5502.png) ;
     background-size: cover;
     background-position: top;
-    height: 100vh;
     width: 100vh;
     position: relative;
+    min-height: -webkit-fill-available;
 }
