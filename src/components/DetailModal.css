@@ -1,9 +1,10 @@
 .DetailModal-img{
-    height: 70vh;
+    height: 60vh;
     width: 100vw;
     object-fit: cover;
 }
 
 .DetailModal-height{
     height: -webkit-fill-available;
+    overflow: auto;
 }

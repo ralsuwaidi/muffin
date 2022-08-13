@@ -4,5 +4,7 @@
     background-position: top;
     width: 100vh;
     position: relative;
+    min-height: 100vh;
+    /* mobile viewport bug fix */
     min-height: -webkit-fill-available;
 }
