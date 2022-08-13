@@ -30,6 +30,12 @@ export default function SwiperCarousal(){
             src="https://images.unsplash.com/photo-1558401391-7899b4bd5bbf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=986&q=80"
           />
         </SwiperSlide>
+        <SwiperSlide>
+          <img
+            className="DetailModal-img rounded-xl"
+            src="https://images.unsplash.com/photo-1575853121743-60c24f0a7502?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80"
+          />
+        </SwiperSlide>
       </Swiper>
     </div>
     )
