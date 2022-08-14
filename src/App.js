@@ -2,17 +2,29 @@ import "./App.css";
 import React from 'react'
 import DetailModal from "./detailModal/DetailModal";
 
-export default function App(){
+export default function App() {
 
   const [showModal, setShowModal] = React.useState(false);
+  const [meal, setMeal] = React.useState(false);
 
   const handleClose = () => {
     setShowModal(false);
-   };
+  };
 
-   const handleOpen = () => {
+  const openDessert = () => {
+    setMeal("Dessert")
     setShowModal(true);
-   };
+  };
+
+  const openBreakfast = () => {
+    setMeal("Breakfast")
+    setShowModal(true);
+  };
+
+  const openLunch = () => {
+    setMeal("Lunch")
+    setShowModal(true);
+  };
 
   return (
     <div className="App container mx-auto ">
@@ -29,23 +41,23 @@ export default function App(){
       <div className=" grid grid-cols-3 gap-1 mx-3 absolute inset-x-0 bottom-5">
         <SelectionCard
           text="Breakfast"
-          onClick={() => setShowModal(true)}
+          onClick={openBreakfast}
           image="https://img.icons8.com/cotton/2x/sunny-side-up-eggs--v1.png"
         />
         <SelectionCard
           text="Lunch"
-          onClick={() => setShowModal(true)}
+          onClick={openLunch}
           image="https://img.icons8.com/cotton/2x/cheeseburger.png"
         />
         <SelectionCard
           text="Dessert"
-          onClick={() => setShowModal(true)}
+          onClick={openDessert}
           image="https://img.icons8.com/cotton/2x/piece-of-lemon-cake.png"
         />
       </div>
 
       {showModal ? (
-        <DetailModal handleClose={handleClose}/>
+        <DetailModal handleClose={handleClose} meal={meal} />
       ) : null}
 
     </div>
@@ -54,10 +66,10 @@ export default function App(){
 
 
 
-function SelectionCard(props){
+function SelectionCard(props) {
   return (
     <div className="mx-2">
-        <a href="#" onClick={props.onClick} className="block text-center py-2 max-w-sm bg-transparent rounded-lg border border-gray-100 hover:bg-gray-100">
+      <a href="#" onClick={props.onClick} className="block text-center py-2 max-w-sm bg-transparent rounded-lg border border-gray-100 hover:bg-gray-100">
         <img src={props.image} className="w-12 mx-auto"></img>
         <p className="mb-1 mt-2 text-xs font-bold tracking-tight dark:text-white">
           {props.text}

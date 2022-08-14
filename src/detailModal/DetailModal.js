@@ -15,7 +15,7 @@ export default function DetailModal(props) {
       <div className="p-2">
         {/*image and content*/}
         <SwiperCarousal />
-        <DetailedText />
+        <DetailedText meal={props.meal}/>
       </div>
       {/*footer*/}
       <RefreshBtn handleClose={props.handleClose} />
